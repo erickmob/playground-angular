@@ -1,0 +1,8 @@
+
+
+<ul *ngIf="list">
+    <li *ngFor="let pokemon of list">
+        <img [src]="pokemon.imgUrl">
+        <p>{{pokemon.name}}</p>
+    </li>
+</ul>

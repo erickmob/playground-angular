@@ -1,0 +1,9 @@
+Pokemon Name:
+<input #pokemonName type="text" />
+<button (click)="findByName(pokemonName.value)">Pesquisar</button>
+<!-- <app-search-result></app-search-result> -->
+<p *ngIf="result?.id" ><img src="{{result.sprites.front_default}}"></p>
+<p *ngIf="result?.id">Id: {{result.id}}</p>
+<p *ngIf="result?.id">Nome: {{result.name}}</p>
+<p *ngIf="result?.id">Altura: {{result.height}}</p>
+<p *ngIf="result?.id">Comprimento: {{result.weight}}</p>
